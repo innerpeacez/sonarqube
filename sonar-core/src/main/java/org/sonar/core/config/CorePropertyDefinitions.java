@@ -270,7 +270,8 @@ public class CorePropertyDefinitions {
 
       // COMPUTE ENGINE
       PropertyDefinition.builder(SKIP_FILEMOVE_DETECTION_KEY)
-        .name("If set to true, file move won't be detected. Moved/renamed files and related issues will be reported as new.")
+        .name("File move detection")
+        .description("If set to true, file move won't be detected. Moved/renamed files and related issues will be reported as new.")
         .defaultValue(Boolean.toString(false))
         .category(CATEGORY_GENERAL)
         .type(BOOLEAN)
